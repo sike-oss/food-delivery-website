@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<nav class="navbar">
+    <div class="navbar-left">
+        <span>🍴 Foodie</span>
+    </div>
+    <div class="navbar-right">
+        <a href="#home">🏠 Home</a>
+        <a href="#menu">📜 Menu</a>
+        <a href="#about">ℹ️ About</a>
+        <a href="#contact">📞 Contact</a>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #007BFF;
+        padding: 1rem;
+        color: white;
+        font-size: 1.2rem;
+    }
+    .navbar-left {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .navbar-right a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+        transition: color 0.3s;
+    }
+    .navbar-right a:hover {
+        color: #ffcc00;
+    }
+</style></nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" class="rel">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color:rgb(255, 255, 255);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+       
+</style>
+    </style>
+   
+</head>
+<div class="banner">
+    <div class="slides">
+        <img src="img1.png" alt="Image 1" class="rotate">
+        <img src="img2.png" alt="Image 2" class="rotate">
+        <img src="img3.png" alt="Image 3" class="rotate">
+        <img src="img5.png" alt="Image 4" class="rotate">
+        <img src="img4.png" alt="Image 5" class="rotate">
+    </div>
+</div>
+
+<style>
+    .rotate {
+        animation: spin 10s linear infinite;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+<style>
+    .banner {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        
+    }
+    .slides {
+        display: flex;
+        width: 200%;
+        animation: slide 20s infinite;
+    }
+    .slides img {
+        width: 20%;
+        transition: transform 1s;
+    }
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(-20%); }
+        40% { transform: translateX(-40%); }
+        60% { transform: translateX(-60%); }
+        80% { transform: translateX(-80%); }
+        100% { transform: translateX(0); }
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="apollo fish.jpg" alt="Image 1">
+        <div class="name">apollo fish</div>
+        <div class="price">$10.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="baby-corn-manchurian.jpg" alt="Image 2">
+        <div class="name">baby-corn-manchurian</div>
+        <div class="price">$15.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="burger banner.jpg" alt="Image 3">
+        <div class="name">burger</div>
+        <div class="price">$20.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="Chicken-Biryani.jpg" alt="Image 4">
+        <div class="name">Chicken-Biryani</div>
+        <div class="price">$25.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="Chicken-Tikka-2-3.jpg" alt="Image 5">
+        <div class="name">Chicken-Tikka</div>
+        <div class="price">$30.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="Ginger-Fish-Dry.jpg" alt="Image 5">
+        <div class="name">Ginger-Fish-Dry</div>
+        <div class="price">$90.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="Chicken-Tikka-2-3.jpg" alt="Image 5">
+        <div class="name">Chicken-Tikka</div>
+        <div class="price">$70.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="IndianTandooriPaneer.jpg" alt="Image 6">
+        <div class="name">IndianTandoori
+            Paneer</div>
+        <div class="price">$35.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="Kadai-Chicken.jpg" alt="Image 7">
+        <div class="name">Kadai-Chicken</div>
+        <div class="price">$40.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="paneer biryani.jpg" alt="Image 8">
+        <div class="name">paneer biryani</div>
+        <div class="price">$45.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="paneer-tikka-burger.JPG" alt="Image 9">
+        <div class="name">paneer-tikka-burger</div>
+        <div class="price">$50.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="grid-item">
+        <img src="plain-naan.jpg" alt="Image 10">
+        <div class="name">plain-naan</div>
+        <div class="price">$55.00</div>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+    }
+    .grid-item {
+        position: relative;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        transition: transform 0.3s;
+    }
+    .grid-item:hover {
+        transform: scale(1.2);
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+    .name{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-weight: uppercase;
+        color: #000000;
+    }
+    .price {
+        font-size: 1.2rem;
+        color: #000000;
+        margin-top: 0.5rem;
+    }
+    .rating {
+        margin-top: 0.5rem;
+    }
+    .rating .fa {
+        color: #ffcc00;
+    }
+</style>
+
+
+<style>
+    .add-to-cart {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #007BFF;
+        color: rgb(255, 255, 255);
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .grid-item:hover .add-to-cart {
+        display: block;
+    }
+</style>
+
+<div class="cart">
+    <h2>Cart</h2>
+    <div class="cart-items"></div>
+    <div class="cart-total">
+        <strong>Total:</strong> $<span class="total-price">0.00</span>
+    </div>
+</div>
+
+<style>
+    .cart {
+        border: 1px solid #007BFF;
+        padding: 1rem;
+        margin: 2rem 0;
+        background-color: #f9f9f9;
+    }
+    .cart h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+    .cart-item img {
+        width: 50px;
+        height: auto;
+    }
+    .cart-item .item-details {
+        flex: 1;
+        margin-left: 1rem;
+    }
+    .cart-item .item-details .item-name {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .cart-item .item-details .item-price {
+        color:grey;
+    }
+    .cart-item .item-quantity {
+        display: flex;
+        align-items: center;
+    }
+    .cart-item .item-quantity input {
+        width: 50px;
+        text-align: center;
+        margin: 0 0.5rem;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        const totalPriceElement = document.querySelector('.total-price');
+        let totalPrice = 0;
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const gridItem = button.closest('.grid-item');
+                const itemName = gridItem.querySelector('.name') ? gridItem.querySelector('.name').textContent : 'Unnamed Item';
+                const itemPrice = parseFloat(gridItem.querySelector('.price').textContent.replace('$', ''));
+                const itemImageSrc = gridItem.querySelector('img').src;
+
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <img src="${itemImageSrc}" alt="${itemName}">
+                    <div class="item-details">
+                        <div class="item-name">${itemName}</div>
+                        <div class="item-price">$${itemPrice.toFixed(2)}</div>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="remove-from-cart">Remove</button>
+                `;
+
+                cartItemsContainer.appendChild(cartItem);
+
+                totalPrice += itemPrice;
+                totalPriceElement.textContent = totalPrice.toFixed(2);
+
+                const quantityInput = cartItem.querySelector('.item-quantity input');
+                quantityInput.addEventListener('change', () => {
+                    const quantity = parseInt(quantityInput.value);
+                    const itemTotalPrice = itemPrice * quantity;
+                    const previousTotalPrice = parseFloat(cartItem.querySelector('.item-price').textContent.replace('$', ''));
+                    totalPrice = totalPrice - previousTotalPrice + itemTotalPrice;
+                    cartItem.querySelector('.item-price').textContent = `$${itemTotalPrice.toFixed(2)}`;
+                    totalPriceElement.textContent = totalPrice.toFixed(2);
+                });
+
+                cartItem.querySelector('.remove-from-cart').addEventListener('click', () => {
+                    const itemTotalPrice = parseFloat(cartItem.querySelector('.item-price').textContent.replace('$', ''));
+                    cartItemsContainer.removeChild(cartItem);
+                    totalPrice -= itemTotalPrice;
+                    totalPriceElement.textContent = totalPrice.toFixed(2);
+                });
+
+                alert('Item added to cart! 🛒');
+            });
+        });
+    });
+</script>
+<button class="buy-now">
+    <a href="payment.html" style="color: white; text-decoration: none;">🛒 Buy It</a>
+</button>
+
+<style>
+    .buy-now {
+        background-color: #007BFF;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        display: inline-block;
+        align-items: center;
+    }
+    .buy-now:hover {
+        background-color: #0056b3;
+    }
+</style>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Food Delivery. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: #007BFF;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+    .footer-content p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .social-links li {
+        display: inline;
+    }
+    .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-links a:hover {
+        color: #ffcc00;
+    }
+</style>
+

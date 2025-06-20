@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style>
+        .payment-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+        }
+        .payment-option button {
+            flex-shrink: 0;
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .payment-option button:hover {
+            background-color: #0056b3;
+        }
+        .payment-option span {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 10px;
+            color: #007BFF;
+        }
+        h2 {
+            color: #000000;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .payment-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .payment-option {
+            margin: 15px 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .payment-option:hover {
+            transform: scale(1.05);
+        }
+        .payment-option img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Select Payment Method</h2>
+        <div class="payment-option">
+            <button style="font-size:24px"><i class="fa fa-cc-visa"></i></button>
+            <a href="final.html" style="text-decoration: none; color: inherit; display: flex; align-items: left;"><span>VISA</span></a>
+        </div>
+        <div class="payment-option">
+            <button style="font-size:24px"><i class="fa fa-credit-card"></i></button>
+            <a href="final.html" style="text-decoration: none; color: inherit; display: flex; align-items: left;"><span>CREDIT CARD</span></a>
+        </div>
+        <div class="payment-option">
+            <button style="font-size:24px"><i class="fa fa-cc-paypal"></i></button>
+            <a href="final.html" style="text-decoration: none; color: inherit; display: flex; align-items: left;"><span>PAYPAL</span></a>
+        </div>
+        <div class="payment-option">
+            <button style="font-size:24px"><i class="fa fa-amazon"></i></button>
+            <a href="final.html" style="text-decoration: none; color: inherit; display: flex; align-items: left;"><span>AMAZON PAY</span></a>  
+        </div>
+        <div class="payment-option">
+            <button style="font-size:24px"><i class="fa fa-google"></i></button>
+            <a href="final.html" style="text-decoration: none; color: inherit; display: flex; align-items: left;"><span>GOOGLE PAY</span></a>
+        </div>
+    </div>
+</body>
+</html>
